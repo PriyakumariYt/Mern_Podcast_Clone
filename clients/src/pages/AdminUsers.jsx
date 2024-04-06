@@ -17,7 +17,6 @@ const getAllUserData = async() =>{
             }
         })
       const data = await response.json()
-      // console.log("data user ka",data)
 //  console.log(`users ${data}`)
 setUsers(data.users)
     } catch (error) {

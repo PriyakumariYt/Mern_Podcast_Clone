@@ -35,10 +35,8 @@ body{
 }
 
 .registration-form {
-  /* background-color: #fff; */
   padding: 20px;
   border-radius: 8px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .main-heading {
@@ -102,8 +100,6 @@ input {
   /* Add more specific styling for smaller screens as needed */
 }
 
-
-
 /*..........................
 ............................
 HOME PAGE START
@@ -116,7 +112,6 @@ HOME PAGE START
 }
 .text-box {
   width: 90%;
-
   color: aliceblue;
   position: absolute;
   top: 50%;
