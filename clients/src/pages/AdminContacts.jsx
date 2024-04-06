@@ -13,7 +13,7 @@ CONTACT GET LOGIC
 ........................*/
 const getAllContactData = async() =>{
 try {
-        const response = await fetch("http://localhost:5000/api/admin/contacts",{
+        const response = await fetch("https://mern-podcast-backend.vercel.app/api/admin/contacts",{
             method:"GET",
             headers:{
                 Authorization: authorizationToken,
@@ -36,7 +36,7 @@ CONTACT dELETED LOGIC
 ........................*/
 const handleDelete = async(id) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/admin/contacts/delete/${id}`, {
+    const response = await fetch(`https://mern-podcast-backend.vercel.app/api/admin/contacts/delete/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: authorizationToken,

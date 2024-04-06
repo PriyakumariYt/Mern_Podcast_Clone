@@ -10,7 +10,7 @@ const AdminUsers = () => {
 const getAllUserData = async() =>{
 
     try {
-        const response = await fetch("http://localhost:5000/api/admin/users",{
+        const response = await fetch("https://mern-podcast-backend.vercel.app/api/admin/users",{
             method:"GET",
             headers:{
                 Authorization: authorizationToken,
@@ -26,7 +26,7 @@ setUsers(data.users)
 }
 const handleDelete = async (id) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/admin/users/delete/${id}`, {
+    const response = await fetch(`https://mern-podcast-backend.vercel.app/api/admin/users/delete/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: authorizationToken,

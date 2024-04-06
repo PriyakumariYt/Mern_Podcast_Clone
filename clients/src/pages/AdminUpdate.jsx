@@ -23,7 +23,7 @@ const {authorizationToken} = useAuth()
     console.log("params data", params)
  const singleUserData = async(id) =>{
     try {
-        const response = await fetch(`http://localhost:5000/api/admin/users/${params.id}`, {
+        const response = await fetch(`https://mern-podcast-backend.vercel.app/api/admin/users/${params.id}`, {
           method: "GET",
           headers: {
             Authorization: authorizationToken,
@@ -52,7 +52,7 @@ const {authorizationToken} = useAuth()
     const handleSubmit =async(e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`, {
+            const response = await fetch(`https://mern-podcast-backend.vercel.app/api/admin/users/update/${params.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

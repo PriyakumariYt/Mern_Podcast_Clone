@@ -35,7 +35,7 @@ USER AUTHENTICATION LOGIC
   const userAuthentication = async () => {
     try {
       setIsLoading(true)
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch("https://mern-podcast-backend.vercel.app/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -61,7 +61,7 @@ SERVICE DATA GET IN FRONTEND LOGIC
 ........................*/
   const getServiceData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/data/service", {
+      const response = await fetch("https://mern-podcast-backend.vercel.app/api/data/service", {
         method: "GET",
       });
 
