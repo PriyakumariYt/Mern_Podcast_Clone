@@ -9,7 +9,7 @@ const serviceRoute = require("./Router/service-router");
 const adminRoute = require("./Router/admin-router");
 const app = express();
 const corsOptions = {
-    origin: "https://mern-podcast-clone.vercel.app/service",
+    origin: "https://mern-podcast-clone.vercel.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };
