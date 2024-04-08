@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import { useAuth } from './ContextApi/TokenApi';
 // import { AuthProvider } from './ContextApi/TokenApi';
 import { Logout } from './pages/Logout';
-import AdminLayout from './components/layouts/Admin-layout';
+import AdminLayout from './components/layouts/Admin-Layout';
 import AdminUsers from './pages/AdminUsers';
 import AdminContacts from './pages/AdminContacts';
 import AdminUpdate from './pages/AdminUpdate';
